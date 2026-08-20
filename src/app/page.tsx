@@ -56,7 +56,7 @@ export default function HomePage() {
 
             <h1 className="font-serif text-5xl sm:text-7xl lg:text-8xl tracking-tight text-white font-normal leading-[0.92] uppercase">
               Verify what <br />
-              <span className="italic font-light text-neutral-300">you can't</span> trust.
+              <span className="italic font-light text-neutral-300">you can&apos;t trust.</span> trust.
             </h1>
 
             <p className="font-sans text-base sm:text-lg text-neutral-400 font-light leading-relaxed max-w-lg">
