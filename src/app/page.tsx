@@ -47,15 +47,12 @@ export default function AnalyzePage() {
               PROVENANCE & AUTHENTICITY EVALUATION
             </span>
           </div>
-
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl text-white font-normal tracking-tight">
             ANALYZE MEDIA
           </h1>
-
           <p className="font-sans text-sm sm:text-base text-neutral-400 font-light max-w-2xl leading-relaxed">
             Upload evidence for an AI-assisted authenticity assessment. VERITAS isolates structural manipulation markers across spatial and frequency domains.
           </p>
-
           <div className="pt-4 flex flex-wrap items-center gap-x-8 gap-y-2 text-[11px] font-sans text-neutral-400 tracking-wider">
             <div className="flex items-center gap-2">
               <span className="text-neutral-400">ENGINE:</span>
@@ -73,18 +70,15 @@ export default function AnalyzePage() {
             </div>
           </div>
         </div>
-
         <div className="transition-all duration-500">
           {pageState === "upload" && (
             <ImageUploader onAnalyze={handleAnalyze} />
           )}
-
           {pageState === "analyzing" && (
             <div className="border border-white/10 bg-surface p-8 sm:p-12">
               <LoadingAnimation />
             </div>
           )}
-
           {pageState === "results" && result && imageUrl && currentFile && (
             <AnalysisResultView
               result={result}
@@ -94,7 +88,6 @@ export default function AnalyzePage() {
             />
           )}
         </div>
-
         <div className="pt-8 border-t border-white/[0.06] text-center">
           <p className="text-[11px] font-sans text-neutral-400 font-light max-w-xl mx-auto leading-relaxed">
             AI-assisted assessment. Results should be interpreted alongside other forensic evidence and are not definitive proof of authenticity.
